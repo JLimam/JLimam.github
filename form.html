@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <script type="text/javascript" src=""></script>
 <head>
     <title>One Piece</title>
     <meta charset="utf-8">
@@ -26,42 +26,35 @@
               </ul>
         </nav>
         <article>
-            <span>Formulari</span>
-            <fieldset>
-                <legend>T'agradaria veure One Piece?</legend>
-                <label for="T'agradaria veure One Piece?" required> </label> <br>
-                <input type="radio" name="Sí" id="Sí" id="Sí"> Sí <br>
-                <input type="radio" name="No" id="No" value="No"> No <br>
-                <br>
-
-                <label for="Quina illa t'ha agradat més?">Quin tipus de fruita t'ha agradat més?</label>
-                <select id="Quina illa t'ha agradat més?" required>
-                    <option value="" selected>- Selecciona -</option>
-                        <option value="Zoan">Zoan</option>
-                        <option value="Logia">Logia</option>
-                        <option value="Paramecia">Paramecia</option>
-
-                </select><br>
+            <body>1. Identificació
+                <from action="gracies.html" method="get" name="formulari" id="formulari">
+                    <fieldset>
+                        <legend>Dades de Registre</legend>
+                        <label for="nom i cognoms">Nom i Cognoms:</label><br>
+                        <input type="text">
+                        <br>
+                        <label for="nif">NIF:</label><br>
+                        <input type="text"> - <input type="text">
+                        <br>
+                        <label for="correu electrònic">Correu electrònic:</label><br>
+                        <input type="text">
+                        <br>
+                        <label for="contrasenya" id="contrasenya">Contrasenya:</label><br>
+                        <input type="text" placeholder="Contrasenya de 6 o més caràcters."><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>2. Confirmació</legend>
+                        <button type="submit" id="submit">Enviar formulari</button>
+                        <button type="reset" id="reset">Esborrar formulari</button>
+                    </fieldset>
+                </from>
+            
+            
+            </body>
 
             </fieldset>
             <br>
-
-            <fieldset>
-                <legend>Quines illes t'han agradat més?</legend>
-                <input type="checkbox" id="Hachinosu"><label for="Hachinosu">Hachinosu</label><br>
-                <input type="checkbox" id="Marineford"><label for="Marineford">Marineford</label><br>
-                <input type="checkbox" id="Marygeoise"><label for="Marygeoise">Marygeoise</label><br>
-                <input type="checkbox" id="Wano"><label for="Wano">Wano</label><br>
-                <input type="checkbox" id="Zou"><label for="Zou">Zou</label>
-
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>Confirma:</legend>
-                <button type="submit" id="submit">Enviar formulari</button>
-                <button type="submit" id="reset">Esborrar formulari</button>
-            </fieldset>
-        </article>
     </section>
 
     <footer>
@@ -69,10 +62,6 @@
         <p>
     </footer>
 
-</body>
-
-</html>
-    
 </body>
 
 </html>
